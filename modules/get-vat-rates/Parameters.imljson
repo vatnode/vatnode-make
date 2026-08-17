@@ -4,6 +4,6 @@
     "type": "text",
     "label": "Country Code",
     "required": true,
-    "help": "Two-letter country code as used by VIES, for example `DE`, `FR`, or `EL` for Greece."
+    "help": "Two-letter ISO country code, for example `DE`, `FR`, or `GR` for Greece. Note that Greek VAT numbers themselves carry the `EL` prefix."
   }
 ]
