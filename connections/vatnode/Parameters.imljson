@@ -1,0 +1,9 @@
+[
+  {
+    "name": "apiKey",
+    "type": "text",
+    "label": "API Key",
+    "required": true,
+    "help": "Create a key in your vatnode dashboard at https://vatnode.dev/dashboard/api-keys. Live keys start with `vat_live_`. A test key (`vat_test_`) can only validate the `XX` fixture numbers — monitoring and the instant trigger need a live key."
+  }
+]

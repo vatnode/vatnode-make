@@ -1,0 +1,9 @@
+[
+  {
+    "name": "vatId",
+    "type": "text",
+    "label": "VAT Number",
+    "required": true,
+    "help": "Full VAT number including the country prefix, for example `DE811907980`. Spaces, dots and dashes are removed automatically."
+  }
+]

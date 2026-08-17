@@ -1,0 +1,7 @@
+{
+  "url": "/vat/{{replace(upper(parameters.vatId); \"/[^A-Z0-9]/g\"; emptystring)}}",
+  "method": "GET",
+  "response": {
+    "output": "{{body}}"
+  }
+}

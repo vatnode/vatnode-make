@@ -1,0 +1,9 @@
+[
+  {
+    "name": "countryCode",
+    "type": "text",
+    "label": "Country Code",
+    "required": true,
+    "help": "Two-letter country code as used by VIES, for example `DE`, `FR`, or `EL` for Greece."
+  }
+]

@@ -1,0 +1,40 @@
+[
+  { "name": "valid", "type": "boolean", "label": "Valid" },
+  { "name": "vatId", "type": "text", "label": "VAT Number" },
+  { "name": "countryCode", "type": "text", "label": "Country Code" },
+  { "name": "countryName", "type": "text", "label": "Country" },
+  { "name": "companyName", "type": "text", "label": "Company Name" },
+  { "name": "companyAddress", "type": "text", "label": "Company Address" },
+  { "name": "companyStatus", "type": "text", "label": "Company Status" },
+  { "name": "registryCode", "type": "text", "label": "Registry Code" },
+  { "name": "consultationNumber", "type": "text", "label": "VIES Consultation Number" },
+  {
+    "name": "specialTerritory",
+    "type": "collection",
+    "label": "Special Territory",
+    "spec": [
+      { "name": "code", "type": "text", "label": "Code" },
+      { "name": "name", "type": "text", "label": "Name" },
+      { "name": "memberState", "type": "text", "label": "Member State" },
+      { "name": "euVatArea", "type": "boolean", "label": "In EU VAT Area" }
+    ]
+  },
+  {
+    "name": "countryVat",
+    "type": "collection",
+    "label": "Country VAT",
+    "spec": [
+      { "name": "vatName", "type": "text", "label": "Local VAT Name" },
+      { "name": "vatAbbr", "type": "text", "label": "Local VAT Abbreviation" },
+      { "name": "currency", "type": "text", "label": "Currency" },
+      { "name": "standardRate", "type": "number", "label": "Standard Rate" },
+      { "name": "reducedRates", "type": "array", "label": "Reduced Rates", "spec": { "type": "number" } },
+      { "name": "superReducedRate", "type": "number", "label": "Super-Reduced Rate" },
+      { "name": "parkingRate", "type": "number", "label": "Parking Rate" },
+      { "name": "vatNumberFormat", "type": "text", "label": "VAT Number Format" }
+    ]
+  },
+  { "name": "checkId", "type": "text", "label": "Check ID" },
+  { "name": "verifiedAt", "type": "date", "label": "Verified At" },
+  { "name": "source", "type": "text", "label": "Source" }
+]

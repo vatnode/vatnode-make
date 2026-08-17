@@ -1,0 +1,10 @@
+{
+  "url": "/subscriptions",
+  "method": "POST",
+  "body": {
+    "vatId": "{{replace(upper(parameters.vatId); \"/[^A-Z0-9]/g\"; emptystring)}}"
+  },
+  "response": {
+    "output": "{{body}}"
+  }
+}

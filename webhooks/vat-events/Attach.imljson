@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://api.vatnode.dev/v1/webhooks",
+    "method": "POST",
+    "headers": {
+      "authorization": "Bearer {{connection.apiKey}}"
+    },
+    "body": {
+      "url": "{{webhook.url}}"
+    },
+    "response": {
+      "data": {
+        "vatnodeWebhookId": "{{body.id}}"
+      },
+      "error": {
+        "message": "[{{statusCode}}] {{ifempty(body.error.message, body.error.code)}}"
+      }
+    }
+  },
+  {
+    "url": "https://api.vatnode.dev/v1/webhooks/{{data.vatnodeWebhookId}}/test",
+    "method": "POST",
+    "headers": {
+      "authorization": "Bearer {{connection.apiKey}}"
+    },
+    "response": {
+      "error": {
+        "message": "[{{statusCode}}] {{ifempty(body.error.message, body.error.code)}}"
+      }
+    }
+  }
+]

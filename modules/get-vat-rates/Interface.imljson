@@ -1,0 +1,14 @@
+[
+  { "name": "countryCode", "type": "text", "label": "Country Code" },
+  { "name": "countryName", "type": "text", "label": "Country" },
+  { "name": "isEU", "type": "boolean", "label": "EU Member" },
+  { "name": "vatName", "type": "text", "label": "Local VAT Name" },
+  { "name": "vatAbbr", "type": "text", "label": "Local VAT Abbreviation" },
+  { "name": "standardRate", "type": "number", "label": "Standard Rate" },
+  { "name": "reducedRates", "type": "array", "label": "Reduced Rates", "spec": { "type": "number" } },
+  { "name": "superReducedRate", "type": "number", "label": "Super-Reduced Rate" },
+  { "name": "parkingRate", "type": "number", "label": "Parking Rate" },
+  { "name": "vatNumberFormat", "type": "text", "label": "VAT Number Format" },
+  { "name": "vatNumberPattern", "type": "text", "label": "VAT Number Pattern" },
+  { "name": "updatedAt", "type": "text", "label": "Rates Updated At" }
+]

@@ -1,0 +1,60 @@
+{
+  "name": "vatnode",
+  "label": "vatnode",
+  "version": 1,
+  "theme": "#0F172A",
+  "language": "en",
+  "audience": "global",
+  "description": "vatnode validates EU VAT numbers against the official VIES register, monitors them for changes and returns EU VAT rates.",
+  "connection": {
+    "name": "vatnode",
+    "label": "vatnode",
+    "type": "basic"
+  },
+  "webhooks": [
+    {
+      "name": "vat-events",
+      "label": "VAT Events",
+      "type": "web",
+      "connection": "vatnode"
+    }
+  ],
+  "modules": [
+    {
+      "name": "validate-vat",
+      "label": "Validate a VAT Number",
+      "typeId": 4,
+      "connection": "vatnode",
+      "description": "Validates an EU VAT number against the official VIES register and returns the trader name, address and the VIES consultation number."
+    },
+    {
+      "name": "monitor-vat",
+      "label": "Monitor a VAT Number",
+      "typeId": 4,
+      "connection": "vatnode",
+      "description": "Adds an EU VAT number to daily monitoring so changes in VIES raise an event."
+    },
+    {
+      "name": "get-vat-rates",
+      "label": "Get VAT Rates",
+      "typeId": 4,
+      "connection": "vatnode",
+      "description": "Returns the current standard, reduced, super-reduced and parking VAT rates for a European country."
+    },
+    {
+      "name": "watch-vat-events",
+      "label": "Watch VAT Events",
+      "typeId": 10,
+      "connection": "vatnode",
+      "webhook": "vat-events",
+      "description": "Triggers when a monitored EU VAT number stops being valid, becomes valid again, or the trader name or address changes in VIES."
+    },
+    {
+      "name": "make-api-call",
+      "label": "Make an API Call",
+      "typeId": 12,
+      "connection": "vatnode",
+      "description": "Performs an arbitrary authorized call to the vatnode API."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  {
+    "name": "vatId",
+    "type": "text",
+    "label": "VAT Number",
+    "required": true,
+    "help": "Full VAT number including the country prefix, for example `NL822010690B01`. A VAT number that is already monitored returns an error — attach an error handler with `Ignore` if your scenario can re-run for the same customer."
+  }
+]

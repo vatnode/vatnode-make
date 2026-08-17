@@ -1,0 +1,19 @@
+{
+  "condition": "{{payload.event != 'webhook.test'}}",
+  "respond": {
+    "status": 200,
+    "type": "json",
+    "body": {
+      "received": true
+    }
+  },
+  "output": {
+    "id": "{{payload.id}}",
+    "event": "{{payload.event}}",
+    "timestamp": "{{payload.timestamp}}",
+    "vatId": "{{payload.data.vatId}}",
+    "countryCode": "{{payload.data.countryCode}}",
+    "subscriptionId": "{{payload.data.subscriptionId}}",
+    "data": "{{payload.data}}"
+  }
+}

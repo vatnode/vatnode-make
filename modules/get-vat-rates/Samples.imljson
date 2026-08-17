@@ -1,0 +1,14 @@
+{
+  "countryCode": "DE",
+  "countryName": "Germany",
+  "isEU": true,
+  "vatName": "Umsatzsteuer",
+  "vatAbbr": "USt",
+  "standardRate": 19,
+  "reducedRates": [7],
+  "superReducedRate": null,
+  "parkingRate": null,
+  "vatNumberFormat": "DE999999999",
+  "vatNumberPattern": "^DE[0-9]{9}$",
+  "updatedAt": "2026-08-11"
+}

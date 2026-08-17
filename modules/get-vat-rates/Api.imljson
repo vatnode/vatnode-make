@@ -1,0 +1,7 @@
+{
+  "url": "/rates/{{upper(parameters.countryCode)}}",
+  "method": "GET",
+  "response": {
+    "output": "{{body}}"
+  }
+}

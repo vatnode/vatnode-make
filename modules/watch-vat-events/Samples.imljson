@@ -1,0 +1,15 @@
+{
+  "id": "0198f1f0-2f5c-7c3b-9c2a-4c5f0d2a1b77",
+  "event": "VAT_BECAME_INVALID",
+  "timestamp": "2026-08-14T06:03:11.402Z",
+  "vatId": "NL822010690B01",
+  "countryCode": "NL",
+  "subscriptionId": "0198f1e2-1b3c-7a4d-8e5f-6a7b8c9d0e1f",
+  "data": {
+    "vatId": "NL822010690B01",
+    "countryCode": "NL",
+    "subscriptionId": "0198f1e2-1b3c-7a4d-8e5f-6a7b8c9d0e1f",
+    "previousValid": true,
+    "newValid": false
+  }
+}

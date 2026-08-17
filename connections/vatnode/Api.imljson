@@ -1,0 +1,18 @@
+{
+  "url": "https://api.vatnode.dev/v1/key",
+  "method": "GET",
+  "headers": {
+    "authorization": "Bearer {{parameters.apiKey}}"
+  },
+  "response": {
+    "metadata": {
+      "value": "{{body.label}} ({{body.environment}})"
+    },
+    "error": {
+      "message": "[{{statusCode}}] {{ifempty(body.error.message, body.error.code)}}"
+    }
+  },
+  "log": {
+    "sanitize": ["request.headers.authorization"]
+  }
+}

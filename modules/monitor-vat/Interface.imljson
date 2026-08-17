@@ -1,0 +1,11 @@
+[
+  { "name": "id", "type": "text", "label": "Subscription ID" },
+  { "name": "vatId", "type": "text", "label": "VAT Number" },
+  { "name": "countryCode", "type": "text", "label": "Country Code" },
+  { "name": "status", "type": "text", "label": "Status" },
+  { "name": "lastCheckedAt", "type": "date", "label": "Last Checked At" },
+  { "name": "lastCompanyName", "type": "text", "label": "Last Known Company Name" },
+  { "name": "lastCompanyAddress", "type": "text", "label": "Last Known Company Address" },
+  { "name": "lastValid", "type": "boolean", "label": "Last Known Validity" },
+  { "name": "createdAt", "type": "date", "label": "Created At" }
+]

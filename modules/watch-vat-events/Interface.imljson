@@ -1,0 +1,9 @@
+[
+  { "name": "id", "type": "text", "label": "Event ID" },
+  { "name": "event", "type": "text", "label": "Event Type" },
+  { "name": "timestamp", "type": "date", "label": "Occurred At" },
+  { "name": "vatId", "type": "text", "label": "VAT Number" },
+  { "name": "countryCode", "type": "text", "label": "Country Code" },
+  { "name": "subscriptionId", "type": "text", "label": "Subscription ID" },
+  { "name": "data", "type": "collection", "label": "Event Data" }
+]

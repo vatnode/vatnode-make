@@ -1,0 +1,25 @@
+{
+  "valid": true,
+  "vatId": "DE811907980",
+  "countryCode": "DE",
+  "countryName": "Germany",
+  "companyName": "AMAZON EU S.A.R.L.",
+  "companyAddress": "38 AVENUE JOHN F. KENNEDY, L-1855 LUXEMBOURG",
+  "companyStatus": "active",
+  "registryCode": null,
+  "consultationNumber": "WAPIAAAAWlpaWloh",
+  "specialTerritory": null,
+  "countryVat": {
+    "vatName": "Umsatzsteuer",
+    "vatAbbr": "USt",
+    "currency": "EUR",
+    "standardRate": 19,
+    "reducedRates": [7],
+    "superReducedRate": null,
+    "parkingRate": null,
+    "vatNumberFormat": "DE999999999"
+  },
+  "checkId": "0198f1f0-2f5c-7c3b-9c2a-4c5f0d2a1b77",
+  "verifiedAt": "2026-08-14T09:12:44.518Z",
+  "source": "VIES"
+}

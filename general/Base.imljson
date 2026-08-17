@@ -1,0 +1,14 @@
+{
+  "baseUrl": "https://api.vatnode.dev/v1",
+  "headers": {
+    "authorization": "Bearer {{connection.apiKey}}"
+  },
+  "response": {
+    "error": {
+      "message": "[{{statusCode}}] {{ifempty(body.error.message, body.error.code)}}"
+    }
+  },
+  "log": {
+    "sanitize": ["request.headers.authorization"]
+  }
+}

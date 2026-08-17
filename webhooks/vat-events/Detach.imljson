@@ -1,0 +1,7 @@
+{
+  "url": "https://api.vatnode.dev/v1/webhooks/{{webhook.vatnodeWebhookId}}",
+  "method": "DELETE",
+  "headers": {
+    "authorization": "Bearer {{connection.apiKey}}"
+  }
+}
