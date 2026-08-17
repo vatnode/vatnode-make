@@ -18,7 +18,7 @@ The API it talks to is documented at [vatnode.dev/docs](https://vatnode.dev/docs
 
 Type `basic`, one field: a vatnode API key from the [dashboard](https://vatnode.dev/dashboard/api-keys), sent as `Authorization: Bearer <key>`. The header is sanitized out of the logs in both the base and the connection.
 
-The connection is verified against `GET /v1/key`, which spends no quota, and the connection label shows the key label and environment.
+The connection is verified against `GET /v1/account`, which spends no quota and returns the account's plan, remaining quota, monitoring usage and billing state. The connection label shows the key label, its environment and the plan.
 
 Live keys (`vat_live_`) work everywhere. Test keys (`vat_test_`) validate the `XX` fixture numbers only and are rejected by monitoring and webhooks, so **Watch VAT Events** and **Monitor a VAT Number** need a live key.
 

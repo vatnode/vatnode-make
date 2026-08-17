@@ -1,12 +1,12 @@
 {
-  "url": "https://api.vatnode.dev/v1/key",
+  "url": "https://api.vatnode.dev/v1/account",
   "method": "GET",
   "headers": {
     "authorization": "Bearer {{parameters.apiKey}}"
   },
   "response": {
     "metadata": {
-      "value": "{{body.label}} ({{body.environment}})"
+      "value": "{{body.key.label}} ({{body.key.environment}}, {{body.plan.name}})"
     },
     "error": {
       "message": "[{{statusCode}}] {{ifempty(body.error.message, body.error.code)}}"
